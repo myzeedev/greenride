@@ -21,8 +21,18 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.myzee.dev.GreenRide"
     },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow GreenRide to access your location."
+        }
+      ],
+      "expo-router"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
