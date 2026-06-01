@@ -4,6 +4,8 @@ import PageNavigator from "./src/nav/PageNavigator";
 import {GestureHandlerRootView} from "react-native-gesture-handler";
 import 'react-native-gesture-handler';
 
+// import { setBackgroundColorAsync } from 'expo-system-ui';
+
 export default function App() {
   return (
       <GestureHandlerRootView style={{ flex: 1 }}>
