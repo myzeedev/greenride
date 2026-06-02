@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { View, Text } from 'react-native';
+import { View, Image, StyleSheet } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../PageNavigator';
 
@@ -19,8 +19,24 @@ export default function SplashScreen({ navigation }: Props) {
     }, []);
 
     return (
-        <View>
-            <Text>Loading</Text>
+        <View style={styles.container}>
+            <Image
+                source={require('../../../assets/gr-png.png')}
+                style={styles.logo}
+            />
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center', // Vertical center
+        alignItems: 'center',     // Horizontal center
+    },
+    logo: {
+        width: 150,
+        height: 150,
+        resizeMode: 'contain',
+    },
+});

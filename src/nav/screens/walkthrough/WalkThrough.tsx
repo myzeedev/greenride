@@ -32,7 +32,7 @@ const slides = [
 ];
 
 export default function WalkThrough({ navigation }: any) {
-    // console.log(navigation)
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const flatListRef = useRef<FlatList>(null);
 

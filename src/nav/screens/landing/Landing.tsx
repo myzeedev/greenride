@@ -52,7 +52,7 @@ export function Landing() {
 
             <BottomSheet
                 ref={bottomSheetRef}
-                index={0}
+                index={1}
                 snapPoints={SNAP_POINTS}
                 animatedPosition={animatedPosition}
                 onAnimate={handleAnimate}
@@ -76,10 +76,11 @@ const styles = StyleSheet.create({
     },
     mapContainer: {
         width: '100%',
+        height: 400,
         overflow: 'hidden',
     },
     sheetBackground: {
-        backgroundColor: '#0f2515',
+        backgroundColor: '#aaa',
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
     },
