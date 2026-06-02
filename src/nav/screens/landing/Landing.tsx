@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         overflow: 'hidden',
     },
     sheetBackground: {
-        backgroundColor: '#aaa',
+        backgroundColor: '#fff',
         borderTopLeftRadius: 24,
         borderTopRightRadius: 24,
     },

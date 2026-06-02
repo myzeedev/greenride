@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
-        color: '#fff'
+        color: '#444'
     },
     pickupContainer: {
         padding: 15,
         borderRadius: 12,
-        backgroundColor: '#f3f3f3',
+        backgroundColor: '#fff',
         marginBottom: 12,
     },
     input: {
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         paddingHorizontal: 15,
         fontWeight: 'bold',
-        fontSize: 15
+        fontSize: 15,
+        backgroundColor: '#eee'
     },
 });

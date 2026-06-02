@@ -26,23 +26,14 @@ export default function MapScreen() {
     return (
         <View style={styles.container}>
             <MapView
-                style={styles.map}
+                style={{ flex: 1 }}
                 initialRegion={{
                     latitude: 6.5244,
                     longitude: 3.3792,
                     latitudeDelta: 0.0922,
                     longitudeDelta: 0.0421,
                 }}
-            >
-                <Marker
-                    coordinate={{
-                        latitude: 6.5244,
-                        longitude: 3.3792,
-                    }}
-                    title="Lagos"
-                    description="Marker location"
-                />
-            </MapView>
+            />
         </View>
     );
 }
@@ -50,8 +41,12 @@ export default function MapScreen() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        width: '100%',
+        height: '100%',
     },
     map: {
         flex: 1,
+        width: '100%',
+        height: '100%',
     },
 });
